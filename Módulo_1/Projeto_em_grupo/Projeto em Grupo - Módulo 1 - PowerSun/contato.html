@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./imagens/PowerSun.jpg" type="image/jpg">
     <title>PowerSun</title>
 </head>
 <body>
-    <script type="text/javascript" src="./javascript/script.js"></script>
     <div class="barra_navegacao">
         <a href="index.html"><img  class= "power_sun" src="./imagens/PowerSun.jpg" alt="logo"></a>
         <div class="menu">
@@ -19,7 +19,7 @@
         </div>
     </div>
     <h1 class="feedback">Feedback</h1>
-    <form method="get" action="envio_dados.php"> <!-- formulário para envio de mensagens-->
+    <form method="POST"> <!-- formulário para envio de mensagens-->
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" placeholder="Digite seu Nome aqui*" required>
         <label for="e-mail">E-mail:</label>
