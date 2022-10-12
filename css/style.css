@@ -89,6 +89,14 @@ body .contatos{
   flex-direction: column;
   justify-content: center;
 }
+.itens_modulo a{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .texto_apresentacao{
   font-size: 25px;
   display: flex;
