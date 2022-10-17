@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    bottom: 10px;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+}
