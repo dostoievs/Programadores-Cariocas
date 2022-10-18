@@ -3,17 +3,38 @@ body{
     color:white;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+body h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acao_realizada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.algoritmo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acao{
+    display: flex;
+    flex-direction: row;
+}
+.algoritmo_box{
+    display: flex;
+    flex-direction: row;
 }
 footer{
     bottom: 10px;
     position: fixed;
     width: 90%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 footer a{
     color:white;
