@@ -12,23 +12,23 @@
         <h1>Codificação/Decodificação</h1><br><br>
         <label class="acao">
             Ação Desejada: 
-            <select class="acao_realizada">
+            <select id="acao_realizada">
                 <option value="codificar">Codificar</option>
                 <option value="decodificar" selected>Decodificar</option>
             </select>
         </label>
         <label class="algoritmo_box">Algoritmo:
-            <select class="algoritmo">
+            <select id="algoritmo">
                 <option value="base64">Base 64</option>
                 <option value="cifra_de_cesar" selected>Cifra de César</option>
             </select>
         </label>
         <label>
             A ser codificado:
-            <textarea id="codificar" name="codificar" rows="4" cols="50">
+            <textarea id="codificar" name="codificar" rows="0" cols="50">
             </textarea>
         </label>
-        <button onclick='myFunction("Teste")'>Codificar</button>
+        <button onclick='myFunction()'>Codificar</button>
         <footer>
             <a href="https://davidlgomes.github.io/Programadores-Cariocas/index.html">
                 Feito por David Lopes Gomes
