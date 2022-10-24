@@ -18,17 +18,20 @@
             </select>
         </label>
         <label class="algoritmo_box">Algoritmo:
-            <select id="algoritmo">
-                <option value="base64">Base 64</option>
-                <option value="cifra_de_cesar" selected>Cifra de César</option>
+            <select id="algoritmo" onchange="mostra_campo_deslocamento(this);">
+                <option value="base64" selected>Base 64</option>
+                <option value="cifra_de_cesar">Cifra de César</option>
             </select>
         </label>
-        <label>
+        <label id="deslocamento" style="visibility: hidden;">
+            Deslocamento: 
+            <input type="number" id="input_deslocamento">
+        </label>
             A ser codificado:
             <textarea id="codificar" name="codificar" rows="0" cols="50">
             </textarea>
         </label>
-        <button onclick='myFunction()'>Codificar</button>
+        <button onclick='codificar()'>Codificar</button>
         <footer>
             <a href="https://davidlgomes.github.io/Programadores-Cariocas/index.html">
                 Feito por David Lopes Gomes
