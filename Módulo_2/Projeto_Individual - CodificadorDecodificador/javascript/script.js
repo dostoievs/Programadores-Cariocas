@@ -8,7 +8,6 @@ function myFunction(){
    select = document.getElementById('algoritmo');
 	var algoritmo = select.options[select.selectedIndex].value;
    var codificar = document.getElementById('codificar').value;
-   var codificar_html = document.getElementById('codificar');
    if((acao=='codificar')&&(algoritmo=='base64')){
       code=window.btoa(codificar);
       alert(code);
@@ -23,16 +22,17 @@ function myFunction(){
          alert('O deslocamento precisa ser um número inteiro válido');
       }
       var tamanhoCodificar=codificar.length;
+      var posicao_maiusculo;
+      var posicao_minusculo;
+      var codificada="";
       for(var indice=0; indice<tamanhoCodificar; indice++){
-         var codificada=[];
-         var posicao=alfabeto_maiusculo.indexOf(codificar[indice]);
-         if(posicao!=-1){
-            codificada += alfabeto_maiusculo[(posicao+deslocamento)];
-            console.log(`${posicao} - ${deslocamento}`)
+         posicao_maiusculo=alfabeto_maiusculo.indexOf(codificar[indice]);
+         posicao_minusculo=alfabeto_minusculo.indexOf(codificar[indice]);
+         if(posicao_maiusculo!=-1){
+            codificada += alfabeto_maiusculo[(posicao_maiusculo+parseInt(deslocamento))%tamanho_alfabeto_maiusculo];
          }
-         posicao=alfabeto_minusculo.indexOf(codificar[indice]);
-         if(posicao!=-1){
-            codificada += alfabeto_minusculo[(posicao+deslocamento)];
+         else if(posicao_minusculo!=-1){
+            codificada += alfabeto_minusculo[(posicao_minusculo+parseInt(deslocamento))%tamanho_alfabeto_minusculo];
          }
          else{
             codificada+=codificar[indice];
@@ -45,6 +45,24 @@ function myFunction(){
       if((deslocamento=='')||(isNaN(deslocamento))){
          alert('O deslocamento precisa ser um número inteiro válido');
       }
+      var tamanhoCodificar=codificar.length;
+      var posicao_maiusculo;
+      var posicao_minusculo;
+      var codificada="";
+      for(var indice=0; indice<tamanhoCodificar; indice++){
+         posicao_maiusculo=alfabeto_maiusculo.indexOf(codificar[indice]);
+         posicao_minusculo=alfabeto_minusculo.indexOf(codificar[indice]);
+         if(posicao_maiusculo!=-1){
+            codificada += alfabeto_maiusculo[(posicao_maiusculo-parseInt(deslocamento))%tamanho_alfabeto_maiusculo];
+         }
+         else if(posicao_minusculo!=-1){
+            codificada += alfabeto_minusculo[(posicao_minusculo-parseInt(deslocamento))%tamanho_alfabeto_minusculo];
+         }
+         else{
+            codificada+=codificar[indice];
+         }
+      }
+      alert(codificada)
    }
    return 0;
 }
