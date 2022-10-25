@@ -1,8 +1,10 @@
-function mudar_texto_botao(){
-   console.log("teste")
-   $("#submit").click(function(){
-      $(this).text("Teste");
-    });
+function muda_botao(){
+   if (document.getElementById("acao_realizada_codificar").checked) {
+      document.getElementById("submit").value='Codificar';
+   } 
+   else if (document.getElementById("acao_realizada_decodificar").checked) {
+      document.getElementById("submit").value='Decodificar';
+   }
 }
 
 function mostra_campo_deslocamento(){
@@ -20,22 +22,20 @@ function codificar(){
    var acao;
    if (document.getElementById("acao_realizada_codificar").checked) {
       acao=document.getElementById("acao_realizada_codificar").value;
-      console.log(acao);
    } 
    else if (document.getElementById("acao_realizada_decodificar").checked) {
       acao=document.getElementById("acao_realizada_decodificar").value;
-      console.log(acao);
    }
    select = document.getElementById('algoritmo');
 	var algoritmo = select.options[select.selectedIndex].value;
    var codificar = document.getElementById('codificar').value;
    if((acao=='codificar')&&(algoritmo=='base64')){
       code=window.btoa(codificar);
-      alert(code);
+      document.getElementById("codificado").textContent = code
    }
    if((acao=='decodificar')&&(algoritmo=='base64')){  
       encode=window.atob(codificar);
-      alert(encode);
+      document.getElementById("codificado").textContent = encode
    }
    if((acao=='codificar')&&(algoritmo=='cifra_de_cesar')){
       var deslocamento=document.getElementById('input_deslocamento').value;
@@ -59,7 +59,7 @@ function codificar(){
             codificada+=codificar[indice];
          }
       }
-      alert(codificada)
+      document.getElementById("codificado").textContent = codificada
    }
    if((acao=='decodificar')&&(algoritmo=='cifra_de_cesar')){
       var deslocamento=document.getElementById('input_deslocamento').value;
@@ -83,7 +83,7 @@ function codificar(){
             codificada+=codificar[indice];
          }
       }
-      alert(codificada)
+      document.getElementById("codificado").textContent = codificada
    }
    return 0;
 }

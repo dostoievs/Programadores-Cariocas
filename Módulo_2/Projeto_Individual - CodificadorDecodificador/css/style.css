@@ -1,42 +1,113 @@
 body{
-    background-color: black;
-    color:white;
+    background-color:#b0e0e6;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1%;
+    margin-bottom: 5%;
 }
-body h1{
+#deslocamento{
+    margin-top: 50px;
+}
+.border{
+    border: 5px solid green;
+    border-radius: 100% 100%;
+    background-color: #b0e0e6;
+    color:black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 6% 10.5% 6%;
+}
+.border h1 a{
+    text-decoration: none;
+    color: black;
+}
+.border .label_acao{
+        display:flex;
+        flex-basis: 100%;
+}
+.border .div_acao .label_acao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+}
+.border .div_acao{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+.border .div_acao .opcoes_acao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.border .opcao_codificar{
+    margin-right: 30px;
+}
+
+.border .algoritmo_box{
+    margin-top: 50px;
+}
+.border .item_a_ser_codificado{
+    margin-top: 50px;
+}
+.border .item_codificado{
+    margin-top: 50px;
+}
+.border textarea{
+    text-align: left;
+    display: flex;;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.border h1{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.border .acao_realizada{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.acao_realizada{
+.border .algoritmo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.algoritmo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.acao{
+.border .acao{
     display: flex;
     flex-direction: row;
 }
-.algoritmo_box{
+.border .algoritmo_box{
     display: flex;
     flex-direction: row;
 }
-footer{
-    bottom: 10px;
-    position: fixed;
-    width: 90%;
+.border footer{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-footer a{
-    color:white;
+.border footer a{
+    font-size: 100%;
+    color:black;
     text-decoration: none;
 }
