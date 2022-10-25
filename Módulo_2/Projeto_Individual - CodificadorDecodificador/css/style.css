@@ -128,5 +128,9 @@ body{
     }
     .border .opcao_codificar{
     margin-right: 20px;
-}
+    }
+    .border .label_acao{
+        display:flex;
+        flex-basis: 100%;
+        margin-right: 15px;
 }
