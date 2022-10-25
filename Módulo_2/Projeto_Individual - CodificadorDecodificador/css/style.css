@@ -131,6 +131,6 @@ body{
     }
     .border .label_acao{
         display:flex;
-        flex-basis: 100%;
+        flex-direction:column;
         margin-right: 15px;
 }
