@@ -126,4 +126,7 @@ body{
         align-items: center;
         padding: 10% 3% 10.5% 3%
     }
+    .border .opcao_codificar{
+    margin-right: 20px;
+}
 }
