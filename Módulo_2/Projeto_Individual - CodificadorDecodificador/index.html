@@ -12,10 +12,8 @@
         <h1>Codificação/Decodificação</h1><br><br>
         <label class="acao">
             Ação Desejada: 
-            <select id="acao_realizada">
-                <option value="codificar">Codificar</option>
-                <option value="decodificar" selected>Decodificar</option>
-            </select>
+            <input id="acao_realizada_codificar" name="acao" type="radio" value="codificar"onclick='mudar_texto_botao();'> Codificar
+            <input id="acao_realizada_decodificar" name="acao" type="radio" value="decodificar"> Decodificar
         </label>
         <label class="algoritmo_box">Algoritmo:
             <select id="algoritmo" onchange="mostra_campo_deslocamento(this);">
@@ -31,7 +29,7 @@
             <textarea id="codificar" name="codificar" rows="0" cols="50">
             </textarea>
         </label>
-        <button onclick='codificar()'>Codificar</button>
+        <button id="submit" onclick='codificar()'>Codificar</button>
         <footer>
             <a href="https://davidlgomes.github.io/Programadores-Cariocas/index.html">
                 Feito por David Lopes Gomes
