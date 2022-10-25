@@ -37,14 +37,15 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    margin-right: 20px;
 }
 .border .div_acao{
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; 
+    width: 50%; 
 }
 .border .div_acao .opcoes_acao{
     display: flex;
@@ -54,7 +55,7 @@ body{
     width: 100%;
 }
 .border .opcao_codificar{
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .border .algoritmo_box{
