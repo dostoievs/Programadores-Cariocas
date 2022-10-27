@@ -13,8 +13,8 @@ body{
 }
 .border{
     border: 5px solid green;
-    background-color: #b0e0e6;
-    color:black;
+    background-color: black;
+    color:white;
     font-size: 25px;
     text-align: center;
     display: flex;
