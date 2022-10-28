@@ -72,12 +72,6 @@ h1{
 .border .item_codificado{
     margin-top: 50px;
 }
-.border textarea{
-    text-align: left;
-    display: flex;;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 .border h1{
     width: 100%;
     text-align: center;
