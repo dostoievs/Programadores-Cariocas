@@ -68,9 +68,17 @@ h1{
 }
 .border .item_a_ser_codificado{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .border .item_codificado{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .border h1{
     width: 100%;
@@ -119,9 +127,6 @@ textarea{
     background-color: black;
     color: white;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #submit{

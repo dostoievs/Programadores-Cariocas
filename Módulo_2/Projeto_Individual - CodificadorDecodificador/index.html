@@ -23,7 +23,7 @@
                 <div class="label_acao">Ação Desejada:</div>
                 <div class="opcoes_acao">
                     <div class="opcao_codificar">
-                        <input id="acao_realizada_codificar" name="acao" type="radio" value="codificar" onchange="muda_botao();">Codificar
+                        <input id="acao_realizada_codificar" name="acao" type="radio" value="codificar" checked onchange="muda_botao();">Codificar
                     </div>
                     <div class="opcao_decodificar">
                         <input id="acao_realizada_decodificar" name="acao" type="radio" value="decodificar"onchange="muda_botao();"> Decodificar
@@ -39,12 +39,13 @@
         </label>
         <label id="deslocamento" style="visibility: hidden;">
             Deslocamento:
-            <input type="number" id="input_deslocamento" autocomplete="off">
+            <input type="number" id="input_deslocamento" autocomplete="off"><br>
         </label>
+        <Br></Br>
         <label class="item_a_ser_codificado">
             A ser codificado:
             <textarea id="codificar" name="codificar" autofocus autocomplete="off"></textarea>
-        </label><br>
+        </label>
         <input type='button' id="submit" onclick='codificar()' value="Codificar">
         <label class="item_codificado">
             Codificado:
