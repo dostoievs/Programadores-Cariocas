@@ -1,14 +1,15 @@
 body{    
     background-color: grey;
     text-align: center;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: top 0px;
-    padding: bottom 0px;
-    margin: 0;
-}
+    
+}  
+
 #input_deslocamento{
     color: silver;
     border-radius: 5px;
@@ -24,13 +25,13 @@ select{
 }
 .border{
     border: 5px solid white;
+    min-height:100vh;
+    width: 90%;
     padding-top: 0;
-    height: auto;
-    width: auto;
+    padding-bottom: 0;
     background-color: black;
     color:silver;
-    margin-top:0;
-    margin-bottom: 0;
+    margin:0;
     font-size: 15px;
     text-align: center;
     display: flex;
@@ -43,6 +44,7 @@ h1{
     margin-top: 0;
 }
 .border h1 a{
+    margin-top: 0;
     text-decoration: none;
     color: black;
 }
@@ -88,6 +90,8 @@ input[type="radio"]{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100px;
 }
 .border .item_codificado{
     margin-top: 50px;
@@ -160,6 +164,7 @@ textarea{
     border-radius: 40px;
 }
 .easyCriptography{
+    padding-top: 0;
     width:100%; 
     height: 120px;
     border-radius: 70%;
@@ -183,3 +188,9 @@ footer{
     align-items: center;
 }
 
+textarea{
+        resize: none;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+}
