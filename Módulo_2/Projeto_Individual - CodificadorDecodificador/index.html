@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Nesse head linkamos o arquivo javascript, css, colocamos os metas necessários, title e o favicon, fora os tratamentos para a aplicação não guardar cache-->
     <title>Projeto Individual David Lopes - Módulo 2</title>
     <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache" />
@@ -17,10 +17,10 @@
 
 <body>
     <div class="border">
-        <h1><a href="index.html"><img class="easyCriptography" src="./imagens/Locked.jpg" alt="EasyCryptography"></a></h1>
+        <h1><a href="index.html"><img class="easyCriptography" src="./imagens/Locked.jpg" alt="EasyCryptography"></a></h1><!--logo-->
         <div class="div_acao">
             <label class="acao">
-                <div class="label_acao">Ação Desejada:</div>
+                <div class="label_acao">Ação Desejada:</div><!--Botoes radius com suas opções Codificar e Decodificar-->
                 <div class="opcoes_acao">
                     <div class="opcao_codificar">
                         <input id="acao_realizada_codificar" name="acao" type="radio" value="codificar" checked onchange="muda_botao();">Codificar
@@ -31,28 +31,28 @@
                 </div>
             </label>
         </div>
-        <label class="algoritmo_box">Algoritmo:
+        <label class="algoritmo_box">Algoritmo:<!--Seleção de algoritmo e suas opções Algoritmo de César e Base64-->
             <select id="algoritmo" onchange="mostra_campo_deslocamento(this);">
                 <option value="base64" selected>Base 64</option>
                 <option value="cifra_de_cesar">Cifra de César</option>
             </select>
         </label>
-        <label id="deslocamento" style="visibility: hidden;">
+        <label id="label_deslocamento" style="visibility: hidden;"><!--Input do tipo número. Só aparece ao selecionarmos Cifra de César-->
             Deslocamento:
             <input type="number" id="input_deslocamento" autocomplete="off"><br>
         </label>
         <Br></Br>
         <label class="item_a_ser_codificado">
-            A ser codificado:
+            A ser codificado:<!--TextArea da informação escrita a ser codificada-->
             <textarea id="codificar" name="codificar" autofocus autocomplete="off"></textarea>
         </label>
-        <input type='button' id="submit" onclick='codificar()' value="Codificar">
+        <input type='button' id="submit" onclick='codificar()' value="Codificar"><!--Botão submit e chamada de função codificar()-->
         <label class="item_codificado">
             Codificado:
-            <textarea id="codificado" name="codificado" autofocus></textarea>
+            <textarea id="codificado" name="codificado" autofocus></textarea><!--TextArea da informação que foi codificada e vai ser escrita-->
         </label>
         <footer>
-            <a href="https://davidlgomes.github.io/Programadores-Cariocas/index.html">
+            <a href="https://davidlgomes.github.io/Programadores-Cariocas/index.html"><!--Footer com link para página do Autor-->
                 David Lopes Gomes
             </a>
         </footer>
