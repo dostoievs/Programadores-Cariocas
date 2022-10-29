@@ -75,7 +75,10 @@ h1{
 .border .opcao_codificar{
     margin-right: 10px;
 }
-
+input[type="radio"]{
+    background-color: green;
+    color: white;
+}
 .border .algoritmo_box{
     margin-top: 50px;
 }
@@ -144,10 +147,10 @@ a:visited{
     margin-bottom: 20px;
 }
 textarea{
+    resize: none;
     background-color: black;
     color: white;
     border-radius: 5px;
-    resize: none;
 }
 
 #submit{
@@ -161,6 +164,21 @@ textarea{
     height: 120px;
     border-radius: 70%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DavidLopesGomes {
+    width:80px; 
+    height:80px;
+    border-radius:50%;
+    border: 1px solid white;
+    
+
+}
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

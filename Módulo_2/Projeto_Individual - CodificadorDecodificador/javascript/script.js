@@ -1,5 +1,7 @@
 const alfabeto_minusculo = 'abcdefghijklmnopqrstuvwxyz';/*Declaração de constantes*/
-const alfabeto_maiusculo = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
+const alfabeto_maiusculo = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const caracteres_base_64= 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/='
+var tamanho_caracteres_base_64=caracteres_base_64.length;
 var tamanho_alfabeto_maiusculo=alfabeto_maiusculo.length;
 var tamanho_alfabeto_minusculo=alfabeto_minusculo.length;
 var acao;
@@ -32,7 +34,7 @@ function codificar(){/*Função de escolha qual algoritmo usar*/
 	var algoritmo = select.options[select.selectedIndex].value;
    var codificar = document.getElementById('codificar').value;
    if((acao=='codificar')&&(algoritmo=='base64')){
-      codificarBase64(codificar, codificado);
+         codificarBase64(codificar, codificado);
    }
    if((acao=='decodificar')&&(algoritmo=='base64')){  
       decodificarBase64(codificar, codificado)
@@ -45,20 +47,42 @@ function codificar(){/*Função de escolha qual algoritmo usar*/
    }
 }
 
+
 function codificarBase64(codificar, codificado){/*Função Codificar Base64*/
+   codificado.value = "";
    code=window.btoa(codificar);
-   codificado.textContent = code
+   codificado.value = code;
 }
 
 function decodificarBase64(codificar, codificado){/*Função Decodificar Base64*/
+   tamanhoCodificar=codificar.length;
+   for(var indice=0; indice<tamanhoCodificar; indice++){
+      var contador=0;
+      for(var indiceAuxiliar=0; indiceAuxiliar<tamanho_caracteres_base_64; indiceAuxiliar++){
+         if(codificar[indice]==caracteres_base_64[indiceAuxiliar]){
+            contador++;
+         }
+      }
+      if(contador==0){
+         codificado.value = `Caractere ${codificar[indice]} inválido. Favor trocar`;
+         return "Caractere Inválido";
+      }
+   }
    encode=window.atob(codificar);
-   codificado.textContent = encode;
+   codificado.value = encode;
 }
 
 function codificarCifraDeCesar(codificar, codificado){/*Função Codificar Cifra de César*/
+   codificado.value = "";
    var deslocamento=document.getElementById('input_deslocamento').value;
-   if((deslocamento=='')||(isNaN(deslocamento))||(deslocamento<0)||(deslocamento>tamanho_alfabeto_maiusculo)){
-      alert('O deslocamento precisa ser um número inteiro válido');
+   if((deslocamento=='')||
+      (isNaN(deslocamento))||
+      (deslocamento<0)||
+      (deslocamento>tamanho_alfabeto_maiusculo)||
+      (Number.isInteger(parseInt(deslocamento)==false))
+   ){
+      codificado.textContent = `Erro: O deslocamento precisa ser um número pertencente ao conjunto dos números inteiros matemáticos válido e estar contido entre 0 e ${tamanho_alfabeto_maiusculo}`
+      return "erro";
    }
    var tamanhoCodificar=codificar.length;
    var posicao_maiusculo;
@@ -77,13 +101,20 @@ function codificarCifraDeCesar(codificar, codificado){/*Função Codificar Cifra
          codificada+=codificar[indice];
       }
    }
-   codificado.textContent = codificada
+   codificado.value = `${codificada}`
 }
 
 function decodificarCifraDeCesar(codificar, codificado){/*Função Decodificar Cifra de César*/
+   codificado.value = "";
    var deslocamento=document.getElementById('input_deslocamento').value;
-   if((deslocamento=='')||(isNaN(deslocamento))||(deslocamento<0)||(deslocamento>tamanho_alfabeto_maiusculo)){
-      alert(`O deslocamento precisa ser um número inteiro válido entre 0 e ${tamanho_alfabeto_maiusculo}`);
+   if((deslocamento=='')||
+      (isNaN(deslocamento))||
+      (deslocamento<0)||
+      (deslocamento>tamanho_alfabeto_maiusculo)||
+      (Number.isInteger(parseInt(deslocamento)==false))
+   ){
+      `Erro: O deslocamento precisa ser um número pertencente ao conjunto dos números inteiros matemáticos válido e estar contido entre 0 e ${tamanho_alfabeto_maiusculo}`
+      return "erro";
    }
    var tamanhoCodificar=codificar.length;
    var posicao_maiusculo;
@@ -102,5 +133,5 @@ function decodificarCifraDeCesar(codificar, codificado){/*Função Decodificar C
          codificada+=codificar[indice];
       }
    }
-   codificado.textContent = codificada
+   codificado.value = `${codificada}`
 }
