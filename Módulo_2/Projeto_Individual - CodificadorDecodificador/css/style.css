@@ -147,6 +147,7 @@ textarea{
     background-color: black;
     color: white;
     border-radius: 5px;
+    resize: none;
 }
 
 #submit{
