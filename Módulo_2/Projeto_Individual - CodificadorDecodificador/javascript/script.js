@@ -121,7 +121,7 @@ function decodificarCifraDeCesar(codificar, codificado){/*Função Decodificar C
       (deslocamento>tamanho_alfabeto_maiusculo)||
       (Number.isInteger(parseInt(deslocamento)==false))
    ){
-      codificado.value=`Erro: O deslocamento precisa ser um número pertencente ao conjunto dos números inteiros matemáticos válido e estar contido entre 0 e ${tamanho_alfabeto_maiusculo}`)
+      codificado.value=`Erro: O deslocamento precisa ser um número pertencente ao conjunto dos números inteiros matemáticos válido e estar contido entre 0 e ${tamanho_alfabeto_maiusculo}`
       return codificado.value;
    }
    var tamanhoCodificar=codificar.length;
