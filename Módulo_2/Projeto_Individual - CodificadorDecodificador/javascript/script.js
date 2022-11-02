@@ -34,15 +34,23 @@ function codificar(){/*Função de escolha qual algoritmo usar*/
 	var algoritmo = select.options[select.selectedIndex].value;
    var codificar = document.getElementById('codificar').value;
    if((acao=='codificar')&&(algoritmo=='base64')){
+         codificado.value='';
          codificarBase64(codificar, codificado);
    }
    if((acao=='decodificar')&&(algoritmo=='base64')){  
+      codificado.value=''
+      if(isBase64(codificar)==false){
+         codificado.value  = "Não é uma string Base64";
+         return codificado.value;
+      }
       decodificarBase64(codificar, codificado)
    }
    if((acao=='codificar')&&(algoritmo=='cifra_de_cesar')){
+      codificado.value=''
       codificarCifraDeCesar(codificar, codificado)
    }
    if((acao=='decodificar')&&(algoritmo=='cifra_de_cesar')){
+      codificado.value=''
       decodificarCifraDeCesar(codificar, codificado)
    }
 }
@@ -81,7 +89,7 @@ function codificarCifraDeCesar(codificar, codificado){/*Função Codificar Cifra
       (deslocamento>tamanho_alfabeto_maiusculo)||
       (Number.isInteger(parseInt(deslocamento)==false))
    ){
-      codificado.textContent = `Erro: O deslocamento precisa ser um número pertencente ao conjunto dos números inteiros matemáticos válido e estar contido entre 0 e ${tamanho_alfabeto_maiusculo}`
+      codificado.value = `Erro: O deslocamento precisa ser um número pertencente ao conjunto dos números inteiros matemáticos válido e estar contido entre 0 e ${tamanho_alfabeto_maiusculo}`
       return "erro";
    }
    var tamanhoCodificar=codificar.length;
@@ -113,8 +121,8 @@ function decodificarCifraDeCesar(codificar, codificado){/*Função Decodificar C
       (deslocamento>tamanho_alfabeto_maiusculo)||
       (Number.isInteger(parseInt(deslocamento)==false))
    ){
-      `Erro: O deslocamento precisa ser um número pertencente ao conjunto dos números inteiros matemáticos válido e estar contido entre 0 e ${tamanho_alfabeto_maiusculo}`
-      return "erro";
+      codificado.value=`Erro: O deslocamento precisa ser um número pertencente ao conjunto dos números inteiros matemáticos válido e estar contido entre 0 e ${tamanho_alfabeto_maiusculo}`)
+      return codificado.value;
    }
    var tamanhoCodificar=codificar.length;
    var posicao_maiusculo;
@@ -134,4 +142,11 @@ function decodificarCifraDeCesar(codificar, codificado){/*Função Decodificar C
       }
    }
    codificado.value = `${codificada}`
+}
+function isBase64(str) {
+   try {
+       return atob(str) ? true : false
+   } catch(e) {
+       return false
+   }
 }
