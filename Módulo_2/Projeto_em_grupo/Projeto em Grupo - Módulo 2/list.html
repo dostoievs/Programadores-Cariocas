@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-  <title>FrontEnders</title>
+  <title>FrontEnders - LIsta de espera</title>
 </head>
 
 <body>
@@ -19,9 +19,9 @@
       </div>
       <div class="nav-list">
         <ul>
-          <li class="nav-item"><a href="services.html" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Serviço</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contatos</a></li>
-          <li class="nav-item"><a href="list.html" class="nav-link">Lista</a></li>
           <li class="nav-item"><a href="sigin.html" class="nav-link">Cadastro</a></li>
         </ul>
       </div>
@@ -30,16 +30,16 @@
       </div>
       <!--INTERAÇÃO PARA NAVEGAÇÃO RESPONSIVA-->
       <div class="mobile-menu-icon">
-        <button onclick="menuShow()">
+        <button onclick="menuShowPages()">
           <img class="icon" src="assets/img/menu_white_36dp.svg" alt="" />
         </button>
       </div>
     </nav>
     <div class="mobile-menu">
       <ul>
-        <li class="nav-item"><a href="services.html" class="nav-link">Serviços</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Serviço</a></li>
         <li class="nav-item"><a href="contact.html" class="nav-link">Contatos</a></li>
-        <li class="nav-item"><a href="list.html" class="nav-link">Lista</a></li>
         <li class="nav-item"><a href="sigin.html" class="nav-link">Cadastro</a></li>
       </ul>
 
@@ -52,13 +52,16 @@
   <!--Configuração de menu padrão NÃO ALTERAR-->
   <!--Conteúdo do site ficará em MAIN-->
   <main>
-    <!--NESSA PÁGINA FICARÃO AS INFORMAÇÕES INICIAIS SOBRE O PRODUTO
-    Colocar imagem, slogan, texto introdutório e etc -->
+    <!-- 
+    AQUI SERÁ A ÁREA DO FORMULÁRIO - Precisamos usar a API VIACEP
+    Usar TAG semantica FORM
+    Formulario deve conter no mínimo:
+  Nome, Sobrenome, Telefone, Email, API VIA CEP para o endereço e botão de enviar com alguma interação. Pode ser ALERT -->
   </main>
   <!--Conteúdo do site ficará em MAIN-->
   <script src="assets/js/script.js"></script>
 </body>
-
+<!--Configuração de menu padrão NÃO ALTERAR-->
 <!--RODAPE DO SITE-->
 <footer class="footer">
   <div class="footer__addr">
@@ -85,5 +88,6 @@
     </div>
   </ul>
 </footer>
+<!--Configuração de menu padrão NÃO ALTERAR-->
 
 </html>
