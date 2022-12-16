@@ -8,10 +8,10 @@ var acao;
 
 function muda_botao(){
    if (document.getElementById("acao_realizada_codificar").checked) {
-      document.getElementById("submit").value='Codificar';              /*função para mudar botões*/
+      document.getElementById("submit").value='Codificar Mensagem!';              /*função para mudar botões*/
    } 
    else if (document.getElementById("acao_realizada_decodificar").checked) {
-      document.getElementById("submit").value='Decodificar';
+      document.getElementById("submit").value='Decodificar Mensagem!';
    }
 }
 
