@@ -1,9 +1,10 @@
-class Anotacoes {
-    constructor(full_name, email, telephone, password, password_confirmation) {
+class Cadastro {
+    constructor(full_name, email, password, password_confirmation, rg) {
             this.full_name = full_name;
             this.email = email;
-            this.telephone=telephone;
             this.password=password;
+            this.password_confirmation=password_confirmation
+            this.rg=rg
     }
     
 }
