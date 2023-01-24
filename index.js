@@ -6,7 +6,7 @@ const PORT = 3000;
 
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const router = jsonServer.router('Programadores-Cariocas/Módulo_3/projeto-individual-modulo-3-react-js/mock/db.json')
+const router = jsonServer.router('Módulo_3/projeto-individual-modulo-3-react-js/mock/db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
