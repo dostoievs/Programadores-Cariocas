@@ -1,41 +1,17 @@
 {
-  "itens": [
-    {
-      "id": 1,
-      "name": "Hambúrguer"
-    },
-    {
-      "id": 2,
-      "name": "Batata Frita"
-    }
-  ],
-  "avaliacao_itens": [
-    {
-      "id": 1,
-      "avaliacao": 10
-    }
-  ],
-  "preco": [
-    {
-      "id": 1,
-      "valor_preco": 10
-    }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "itens":[
+        {
+            "id": 1,
+            "name":"Hambúrguer",
+            "preco": 10.00,
+            "estoque":0
+
+        },
+        {
+            "id": 2,
+            "name":"Batata Frita",
+            "preco": 10.00,
+            "estoque":0
+        }
+    ]
 }
