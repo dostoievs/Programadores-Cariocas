@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Produto</title>
 </head>
+
 <body>
-    
+    <header>
+        <form>
+            Nome:
+            <input type="text" id="name">
+            Preço:
+            <input type="number" id="preco">
+            Estoque:
+            <input type="number" id="estoque">
+            ID:
+            <input type="text" id="id">
+            <input type="submit" value="Enviar">
+        </form>
+    </header>
+
+    <section>
+    </section>
+
+
+    <script>
+        requestURL = 'http://localhost:3000/itens'
+        let request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function () {
+            let request_response = request.response;
+            populateHeader(request_response);
+            /*showHeroes(request_response);*/
+        }
+        function populateHeader(jsonObj) {
+            var header = document.querySelector('header');
+            var section = document.querySelector('section');
+
+            let myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['itens'];
+            header.appendChild(myH1);
+
+            let myPara = document.createElement('p');
+            myPara.textContent = 'Item: ' + jsonObj['name'] + ' // ID: ' + jsonObj['id'];
+            header.appendChild(myPara);
+        }
+        /*function showHeroes(jsonObj) {
+            var heroes = jsonObj['members'];
+
+            for (var i = 0; i < heroes.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myList = document.createElement('ul');
+
+                myH2.textContent = heroes[i].name;
+                myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+                myPara2.textContent = 'Age: ' + heroes[i].age;
+                myPara3.textContent = 'Superpowers:';
+
+                var superPowers = heroes[i].powers;
+                for (var j = 0; j < superPowers.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = superPowers[j];
+                    myList.appendChild(listItem);
+                }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+
+                section.appendChild(myArticle);
+            }
+        }*/
+
+
+
+
+    </script>
 </body>
+
 </html>
