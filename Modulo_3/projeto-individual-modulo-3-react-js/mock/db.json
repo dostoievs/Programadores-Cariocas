@@ -6,12 +6,6 @@
             "preco": 10.00,
             "estoque":0
 
-        },
-        {
-            "id": 2,
-            "name":"Batata Frita",
-            "preco": 10.00,
-            "estoque":0
         }
     ]
 }
