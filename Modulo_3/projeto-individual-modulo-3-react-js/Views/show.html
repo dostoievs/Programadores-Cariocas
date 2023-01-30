@@ -22,7 +22,7 @@
     console.log(string)
     var paramArray = {};
     itens = document.getElementById('itens')
-    fetch(`http://localhost:3000/itens/`).then((response) => {
+    fetch(`https://projeto-individual-modulo-3-react.onrender.com/itens/`).then((response) => {
         response.json().then((itens_json) => {
             console.log(itens_json)
             itens.innerHTML += `Item(${itens_json[indice-1].id}): 
