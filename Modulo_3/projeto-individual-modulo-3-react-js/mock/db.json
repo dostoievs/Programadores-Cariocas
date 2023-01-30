@@ -1,11 +1,16 @@
 {
-    "itens":[
-        {
-            "id": 1,
-            "name":"Hambúrguer",
-            "preco": 10.00,
-            "estoque":0
-
-        }
-    ]
+  "itens": [
+    {
+      "categoria": "Comida",
+      "nome": "Hambúrguer",
+      "preco": 10,
+      "estoque": 0
+    },
+    {
+      "categoria": "Comida",
+      "nome": "Batata Frita",
+      "preco": 15,
+      "estoque": 15
+    }
+  ]
 }
