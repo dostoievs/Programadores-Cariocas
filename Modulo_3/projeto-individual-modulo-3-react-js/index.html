@@ -25,7 +25,7 @@
     response.json().then((itens_json) => {
       console.log(itens_json)
       for (indice = 0; indice < itens_json.length; indice++) {
-        itens.innerHTML += `Item${itens_json[indice].id}: ${itens_json[indice].name}<br/><br/>`.link(`./Views/show.html/?id=${indice + 1}`)
+        itens.innerHTML += `Item: ${itens_json[indice].nome}<br/><br/>`.link(`./Views/show.html/?id=${indice + 1}`)
       }
     })
   })
