@@ -2,36 +2,33 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
 </head>
 
 <body>
 
   <body>
-    <form action="./Views/show.html">
-      <input type="submit" value="Ver todos os produtos" />
-    </form>
     <form action="./Views/new.html">
       <input type="submit" value="Cadastrar Produtos" />
     </form>
   </body>
-    <div id="itens">
+  <div id="itens">
 
-    </div>
+  </div>
 </body>
 <script>
-    itens = document.getElementById('itens')
-    fetch('https://projeto-individual-modulo-3-react-js.onrender.com/itens').then((response) => {
-        response.json().then((itens_json) => {
-            console.log(itens_json)
-            for (indice = 0; indice < itens_json.length; indice++) {
-                itens.innerHTML += `Item${itens_json[indice].id}: ${itens_json[indice].name}<br/><br/>`
-            }
-        })
+  itens = document.getElementById('itens')
+  fetch('http://localhost:3000/itens').then((response) => {
+    response.json().then((itens_json) => {
+      console.log(itens_json)
+      for (indice = 0; indice < itens_json.length; indice++) {
+        itens.innerHTML += `Item${itens_json[indice].id}: ${itens_json[indice].name}<br/><br/>`.link(`./Views/show.html/?id=${indice + 1}`)
+      }
     })
+  })
 </script>
 
 </html>
