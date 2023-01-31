@@ -21,7 +21,7 @@
 </body>
 <script>
   itens = document.getElementById('itens')
-  fetch('http://localhost:3000/itens').then((response) => {
+  fetch('https://projeto-individual-modulo-3-react-js.onrender.com/itens').then((response) => {
     response.json().then((itens_json) => {
       console.log(itens_json)
       for (indice = 0; indice < itens_json.length; indice++) {
