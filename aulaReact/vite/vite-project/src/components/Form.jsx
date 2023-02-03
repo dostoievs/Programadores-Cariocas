@@ -1,23 +1,32 @@
-import Button from "./Button";
+import Button from "./Button"
 function Form(){
     return(
         <form>
-            <label>Classificação:
-            <input type="text" id="classificacao"/>
-            </label><br />
-            <label>Nome
-            <input type="text" id="nome"/>
-            </label><br />
-            <label>Preço:
-            <input type="number" id="preco"/>
-            </label><br />
-            <label>Estoque:
-            <input type="number" id="estoque"/>
-            </label><br />
-            <Button texto="Prop Enviar" color="green"></Button>
-            <Button texto="Prop Enviar" color="black"></Button>
-            <Button texto="Prop Enviar" color="red"></Button>
+            <label>Nome: 
+            <input type="text"/>
+            </label>
+            <br/>
+            <label>email:
+            <input type="email"/>
+            </label>
+            <br/>
+            <label>Mensagem:
+            <textarea rows="5" cols="40"/>
+            </label>
+            <br/>
+            <br/>
+            <br/>
+            <Button cor="Branco"/>
+            <Button cor="Preto"/>
+            <Button cor="Azul"/>
+            <Button cor="Verde"/>
+            <Button cor="Rosa"/>
+            <Button cor="Roxo"/>
+            <Button cor="Laranja"/>
+            <Button cor="Cinza"/>
+            <Button cor="Amarelo"/>
+            <Button cor="Vermelho"/>
         </form>
     )
 }
-export default Form;
+export default Form

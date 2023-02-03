@@ -5,17 +5,16 @@ function Button({cor}){
         Rosa:"pink",
         Roxo:"purple",
         Laranja:"orange",
-        Cinza:"grey", 
+        Cinza:"grey",
         Azul:"blue",
         Amarelo:"yellow",
         Vermelho:"red",
         Branco:"white",
     }
     return(
-        <button onClick={(e)=>{
-            document.querySelector('body').style.backgroundColor=cores[cor];
-            e.preventDefault()}}>
-        {cores[cor]}</button>
+        <button onClick={(e)=>{document.querySelector('body').style.backgroundColor=cores[cor]
+        e.preventDefault()}}>
+            {cor}</button>
     )
 }
-export default Button;
+export default Button

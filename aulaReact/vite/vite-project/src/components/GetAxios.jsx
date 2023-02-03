@@ -1,25 +1,27 @@
-import axios from "axios"
+import axios from "axios";
+import { useEffect, useState } from "react";
+import Tarefa from "./Tarefa";
 function GetAxios() {
+  const [tarefas, setTarefas] = useState([])
+
+  useEffect(()=>{
     axios
-        .get('https://projeto-individual-modulo-3-react-js.onrender.com/itens')
-        .then((response) => { console.log(response.data) })
-        .catch((error) => { console.log(error) })
-
-    return (
-        <div>GetAxios</div>
-    )
+    .get('https://fork-servidor-notas.onrender.com/notas')
+    .then((response) => {
+      console.log(response.data[0].titulo)
+      setTarefas(response.data)
+    })
+    .catch((error) => { console.error(error) })
+  }, [])
+  
+  return (
+    <div>
+      {
+      tarefas.map((element, key) => (
+        <Tarefa titulo={element.titulo} key={key} />
+      ))
+      }
+    </div>
+  )
 }
-/*  var axios = require("axios").default;
-
-  var options = {
-      method: 'GET',
-      url: 'https://projeto-individual-modulo-3-react-js.onrender.com/itens'
-  };
-
-  axios.request(options).then(function (response) {
-      console.log(response.data);
-  }).catch(function (error) {
-      console.error(error);
-  });
-}*/
 export default GetAxios
