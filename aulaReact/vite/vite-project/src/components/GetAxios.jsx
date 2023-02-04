@@ -3,24 +3,24 @@ import { useEffect, useState } from "react";
 import Tarefa from "./Tarefa";
 function GetAxios() {
   const [tarefas, setTarefas] = useState([])
-
-  useEffect(()=>{
+  const [ref, setRef] = useState(0)
+  useEffect(() => {
     axios
-    .get('https://fork-servidor-notas.onrender.com/notas')
-    .then((response) => {
-      console.log(response.data[0].titulo)
-      setTarefas(response.data)
-    })
-    .catch((error) => { console.error(error) })
-  }, [])
-  
+      .get('https://fork-servidor-notas.onrender.com/notas')
+      .then((response) => {
+        console.log(response.data[0].titulo)
+        setTarefas(response.data)
+      })
+      .catch((error) => { console.error(error) })
+  }, [ref])
   return (
     <div>
-      {
-      tarefas.map((element, key) => (
-        <Tarefa titulo={element.titulo} key={key} />
-      ))
-      }
+      <button onClick={() => {
+        setRef(ref + 1);
+      }}>Atualizar</button>
+      {tarefas.map((element, key) => (
+        <Tarefa tituloTarefa={element.titulo} key={key} />
+      ))}
     </div>
   )
 }

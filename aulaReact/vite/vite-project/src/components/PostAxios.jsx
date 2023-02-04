@@ -1,8 +1,13 @@
 import axios from "axios";
 function PostAxios() {
+  const dado = {
+    id: "",
+    titulo: "Estudando Post Axios",
+    status: true,
+  }
   function PostarNota() {
     axios
-      .post('https://fork-servidor-notas.onrender.com/notas', dado)
+      .post('https://fork-servidor-notas.onrender.com', dado)
       .then((response) => { console.log(response) })
       .catch((error) => { console.log(error) })
   }

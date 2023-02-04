@@ -1,11 +1,11 @@
 import { useState } from "react"
-import axios from "axios";
-
+import axios from "axios"
+import GetAxios from "./GetAxios"
 function NovaTarefa() {
-    const [titulo, setTitulo] = useState('Nenhum Titulo Digitado')
+    const [tituloTarefa, setTituloTarefa] = useState("Nenhum Titulo Digitado")
     const dado = {
         id: "",
-        titulo: titulo,
+        titulo: tituloTarefa,
         status: true,
       }
     function PostarNota() {
@@ -15,15 +15,13 @@ function NovaTarefa() {
           .catch((error) => { console.log(error) })
       }
     return (
-        <>
-            <label htmlFor="titulo">Titulo: </label>
-            <input type="text" id="titulo" onChange={()=>{
-                setTitulo(document.getElementById('titulo').value)
-            }} />
-            <button onClick={()=>{PostarNota()
-
-            }}>Post</button>
-        </>
+        <div>
+            <label>Titulo: </label>
+            <input type="text" id="titulo" onChange={()=>(
+                setTituloTarefa(document.getElementById('titulo').value)
+    )}/>
+            <button onClick={()=>PostarNota()}>Cadastrar</button>
+        </div>
     )
 }
 export default NovaTarefa
