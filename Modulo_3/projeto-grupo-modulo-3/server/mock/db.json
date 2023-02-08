@@ -2,10 +2,10 @@
     "itens": [
       {
         "id": "",
-        "categoria": "Comida",
-        "nome": "Hambúrguer",
-        "preco": 10,
-        "estoque": 0
+        "categoria": "",
+        "nome": "",
+        "preco": "",
+        "estoque": ""
       }
     ],
     
