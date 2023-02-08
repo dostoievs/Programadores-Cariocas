@@ -1,0 +1,55 @@
+{
+    "itens": [
+      {
+        "id": "",
+        "categoria": "Comida",
+        "nome": "Hambúrguer",
+        "preco": 10,
+        "estoque": 0
+      }
+    ],
+    
+        "pedidos": [
+            {
+                "id": "",   
+                "nomeCliente": "",
+                "numeroCliente": "",
+                "numeroPedido": "",
+                "valorTotal": "",
+                "itens": {},
+                "observacao": "",
+                "status": ""
+            }
+        ],
+        "pagamento": [
+            {
+                "id":"",
+                "pedidos":{},
+                "tipoCartao": "",
+                "numeroCartao": "",
+                "bandeiraCartao": "",
+                "valorTotal": "",
+                "status": ""
+            }
+        ], 
+        "login":[
+            {
+                "id":"",
+                "usuario": {},
+                "senha": "",
+                "status":""
+            }
+        ],
+        "usuario":[
+            {
+                "id":"",
+                "nome":"",
+                "sobrenome":"",
+                "cpf":"",
+                "email":"",
+                "senha":"",
+                "status":""
+            }
+        ]
+    
+  }
