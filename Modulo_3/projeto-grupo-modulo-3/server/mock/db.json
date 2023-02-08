@@ -1,12 +1,13 @@
 {
     "itens": [
       {
-        "id": "",
-        "categoria": "",
-        "nome": "",
-        "preco": "",
-        "estoque": "",
-        "status": ""
+        "id": "0",
+        "categoria": "Comida",
+        "nome": "Batat Frita",
+        "preco": 10.00,
+        "fotos": "https://img.freepik.com/fotos-premium/batatas-fritas-comida-almoco-gordura-levar-batatas-fritas-fast-food_488220-21430.jpg",
+        "estoque": "5",
+        "status": "active"
       }
     ],
     
