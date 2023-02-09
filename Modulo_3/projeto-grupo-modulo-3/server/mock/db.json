@@ -1,0 +1,55 @@
+{
+    "itens": [
+      {
+        "id": "",
+        "categoria": "",
+        "nome": "",
+        "preco": "",
+        "estoque": ""
+      }
+    ],
+    
+        "pedidos": [
+            {
+                "id": "",   
+                "nomeCliente": "",
+                "numeroCliente": "",
+                "numeroPedido": "",
+                "valorTotal": "",
+                "itens": {},
+                "observacao": "",
+                "status": ""
+            }
+        ],
+        "pagamento": [
+            {
+                "id":"",
+                "pedidos":{},
+                "tipoCartao": "",
+                "numeroCartao": "",
+                "bandeiraCartao": "",
+                "valorTotal": "",
+                "status": ""
+            }
+        ], 
+        "login":[
+            {
+                "id":"",
+                "usuario": {},
+                "senha": "",
+                "status":""
+            }
+        ],
+        "usuario":[
+            {
+                "id":"",
+                "nome":"",
+                "sobrenome":"",
+                "cpf":"",
+                "email":"",
+                "senha":"",
+                "status":""
+            }
+        ]
+    
+  }
