@@ -1,6 +1,7 @@
 {
   "name": "vite-project",
   "private": true,
+  "homepage": "https://davidlgomes.github.io/Programadores-Cariocas/Modulo_3/projeto-grupo-modulo-3",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
