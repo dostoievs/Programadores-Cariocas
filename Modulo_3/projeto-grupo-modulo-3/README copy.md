@@ -1,2 +1,0 @@
-# aulaReact
-resilia react
