@@ -6,13 +6,15 @@ import {
 } from "react-router-dom";
 import App from './App'
 import AdicionarItem from './components/AdicionarItem';
+import Contato from './components/Contato';
 import ExibirCardapio from './components/ExibirCardapio';
 
-const router = createBrowserRouter([{
-  path: "/",
-  element: <App/> ,
-  errorElement: <h1> Error 404 </h1>,
-  children: [{
+const router = createBrowserRouter(
+  [{
+    path: "/",
+    element: <App />,
+    errorElement: <h1> Error 404 </h1>,
+    children: [{
       path: "/",
       element: <h1> Home </h1>,
     },
@@ -20,15 +22,15 @@ const router = createBrowserRouter([{
       path: "/cardapio",
       element: <div>
         <h1> Cardápio </h1>
-        <ExibirCardapio/>
-        </div>,
+        <ExibirCardapio />
+      </div>,
     },
     {
       path: "/cardapio/adicionar-item",
       element: <div>
         <h1>Adicionar Item</h1>
-        <AdicionarItem/>
-        </div>,
+        <AdicionarItem />
+      </div>,
     },
     {
       path: "/sobre",
@@ -40,14 +42,15 @@ const router = createBrowserRouter([{
     },
     {
       path: "/contato",
-      element: <h1> Página de Contato </h1>,
+      element: <Contato />,
     },
-  ]
-}, ]);
+    ]
+  }],
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <RouterProvider router = {router}/> 
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

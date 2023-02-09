@@ -11,7 +11,7 @@ function ItemCardapio({element}) {
             R${element.preco.toFixed(2)}
           </Card.Text>
           <input type="number" min="0" max={element.estoque}/>
-          {/*<Button variant="primary">Comprar</Button>*/}
+          {<Button variant="primary">Comprar</Button>}
         </Card.Body>
       </Card>
 

@@ -18,10 +18,8 @@ function ExibirCardapio() {
     <div>
       {<button onClick={()=>setRef(ref+1)}>Atualizar</button>}
       {<button onClick={()=>AdicionarItem()}>Adicionar Produtos ao Cardápio</button>}
-      {cardapio.map((element, key) => (
-        <>
-        <ItemCardapio element={element} key={key}/>
-      </>
+      {cardapio.map((element) => (
+      <ItemCardapio element={element} key={element.id}/>
       ))}
     </div>
   )
