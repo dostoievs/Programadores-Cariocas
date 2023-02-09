@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver todos os produtos</title>
+</head>
+
+<body>
+    <div id="itens">
+
+    </div>
+</body>
+<script>
+    itens = document.getElementById('itens')
+    fetch('https://teste-2.onrender.com/itens').then((response) => {
+        response.json().then((itens_json) => {
+            console.log(itens_json)
+            for (indice = 0; indice < itens_json.length; indice++) {
+                itens.innerHTML += `Item${itens_json[indice].id}: ${itens_json[indice].name}<br/><br/>`
+            }
+        })
+    })
+</script>
+
+</html>

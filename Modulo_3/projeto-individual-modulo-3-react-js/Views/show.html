@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver todos os produtos</title>
+</head>
+
+<body>
+    <div id="itens">
+
+    </div>
+</body>
+<script>
+    var params = window.location.search.substring(1).split('&');
+    let string=''
+    params[0]=params[0].replace('id=','')
+    string=params.toString()
+    indice=parseInt(string)
+    console.log(string)
+    var paramArray = {};
+    itens = document.getElementById('itens')
+    fetch(`http://localhost:3000/itens/`).then((response) => {
+        response.json().then((itens_json) => {
+            console.log(itens_json)
+            itens.innerHTML += `Item(${itens_json[indice-1].id}): 
+                                ${itens_json[indice-1].name}<br/><br/>`
+        })
+    })
+</script>
+
+</html>
