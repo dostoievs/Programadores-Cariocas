@@ -1,59 +1,57 @@
 {
     "itens": [
-      {
-        "id": 0,
-        "categoria": "Comida",
-        "nome": "Batata Frita",
-        "preco": 10.00,
-        "fotos": "https://img.freepik.com/fotos-premium/batatas-fritas-comida-almoco-gordura-levar-batatas-fritas-fast-food_488220-21430.jpg",
-        "estoque": 5,
-        "quantidade": 0,
-        "status": "active"
-      }
+        {
+            "id": 0,
+            "categoria": "Comida",
+            "nome": "Batata Frita",
+            "preco": 10.00,
+            "fotos": "https://img.freepik.com/fotos-premium/batatas-fritas-comida-almoco-gordura-levar-batatas-fritas-fast-food_488220-21430.jpg",
+            "estoque": 5,
+            "quantidade": 0,
+            "status": "active"
+        }
     ],
-    
-        "pedidos": [
-            {
-                "id": "",   
-                "nomeCliente": "",
-                "numeroCliente": "",
-                "numeroPedido": "",
-                "valorTotal": "",
-                "itens": {},
-                "observacao": "",
-                "status": ""
-            }
-        ],
-        "pagamento": [
-            {
-                "id":"",
-                "pedidos":{},
-                "tipoCartao": "",
-                "numeroCartao": "",
-                "bandeiraCartao": "",
-                "valorTotal": "",
-                "status": ""
-            }
-        ], 
-        "login":[
-            {
-                "id":"",
-                "usuario": {},
-                "senha": "",
-                "status":""
-            }
-        ],
-        "usuario":[
-            {
-                "id":"",
-                "nome":"",
-                "sobrenome":"",
-                "cpf":"",
-                "email":"",
-                "senha":"",
-                "status":"",
-                "tipo": ""
-            }
-        ]
-    
-  }
+    "pedidos": [
+        {
+            "id": 0,
+            "nomeCliente": "",
+            "numeroCliente": "",
+            "numeroPedido": "",
+            "valorTotal": "",
+            "itens": {},
+            "observacao": "",
+            "status": ""
+        }
+    ],
+    "pagamento": [
+        {
+            "id": 0,
+            "pedidos": {},
+            "tipoCartao": "",
+            "numeroCartao": "",
+            "bandeiraCartao": "",
+            "valorTotal": "",
+            "status": ""
+        }
+    ],
+    "login": [
+        {
+            "id": 0,
+            "usuario": {},
+            "senha": "",
+            "status": ""
+        }
+    ],
+    "usuario": [
+        {
+            "id": 0,
+            "nome": "",
+            "sobrenome": "",
+            "cpf": "",
+            "email": "",
+            "senha": "",
+            "status": "",
+            "tipo": ""
+        }
+    ]
+}
