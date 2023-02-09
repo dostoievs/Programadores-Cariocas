@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.links{
+    text-decoration: none;
+    color:aliceblue;
+    margin: right 30rem;
+}
+.links:hover{
+    color:aliceblue;
+
+}
