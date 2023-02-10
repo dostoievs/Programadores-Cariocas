@@ -71,8 +71,9 @@ function AdicionarItem() {
           <option>Ativo</option>
           <option>Inativo</option>
         </select>
+         <button onClick={() => PostarItem()}>Postar</button>
       </form>
-      <button onClick={() => PostarItem()}>Postar</button>
+      
     </>
   )
 }
