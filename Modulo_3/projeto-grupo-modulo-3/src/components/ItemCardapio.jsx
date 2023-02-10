@@ -8,7 +8,7 @@ function ItemCardapio({element}) {
         <Card.Body>
           <Card.Title>{element.nome}</Card.Title>
           <Card.Text>
-            R${element.preco.toFixed(2)}
+            R${element.preco}
           </Card.Text>
           <input type="number" min="0" max={element.estoque}/>
           {<Button variant="primary">Comprar</Button>}

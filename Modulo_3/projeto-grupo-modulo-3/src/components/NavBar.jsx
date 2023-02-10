@@ -25,10 +25,9 @@ function NavBar() {
           <Navbar bg="dark" variant="dark">
         <Container>
           <Nav className="me-auto row">
-            <Nav className='col'><Link to='/' className={Style.links}>Home</Link></Nav>
             <Nav className='col'><Link to='/cardapio' className={Style.links}>Cardápio</Link></Nav>
             <Nav className='col'><Link to='/sobre' className={Style.links}>Sobre</Link></Nav>
-            <Nav className='col'><Link to='/tarefas' className={Style.links}>Tarefas</Link></Nav>
+            <Nav className='col'><Link to='/pedidos' className={Style.links}>Pedidos</Link></Nav>
             <Nav className='col'><Link to='/contato' className={Style.links}>Contato</Link></Nav>
           </Nav>
         </Container>

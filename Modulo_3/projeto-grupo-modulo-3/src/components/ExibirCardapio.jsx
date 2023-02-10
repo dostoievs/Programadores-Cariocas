@@ -20,9 +20,11 @@ function ExibirCardapio() {
       {<button onClick={()=>setRef(ref+1)}>Atualizar</button>}
       {<Link to="/cardapio/adicionar-item">Adicionar Produtos ao Cardápio</Link>}
       {<Outlet/>}
-      {cardapio.map((element) => (
-      <ItemCardapio element={element} key={element.id}/>
-      ))}
+      <div className="row">
+        {cardapio.map((element) => (
+            <ItemCardapio className='col' element={element} key={element.id}/>
+        ))}
+      </div>
     </div>
   )
 }
