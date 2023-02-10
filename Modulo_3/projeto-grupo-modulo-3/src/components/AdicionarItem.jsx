@@ -45,7 +45,7 @@ function AdicionarItem() {
         <div className="form-group">
           <label htmlFor="formGroupExampleInput2">Preço:</label>
           <input type="number" className="form-control" id="preco" placeholder="Digite o Preço" required onChange={() => {
-            setPreco(parseInt(document.getElementById('preco').value).toFixed(2))
+            setPreco(parseNumber(document.getElementById('preco').value).toFixed(2))
           }} />
         </div>
         <div className="form-group">
