@@ -13,12 +13,13 @@ function AdicionarItem() {
       id: "",
       categoria: "Comidas",
       nome: nome,
-      preco: preco,
+      preco:  Number.parseFloat(preco),
       estoque: estoque,
-      foto: foto,
+      fotos: foto,
       descricao: descricao,
       status: "Ativo"
    }
+   console.log(itens)
   function PostarItem() {
     axios
       .post('https://modulo-3-projeto-grupo.onrender.com/itens', itens)
@@ -45,7 +46,7 @@ function AdicionarItem() {
         <div className="form-group">
           <label htmlFor="formGroupExampleInput2">Preço:</label>
           <input type="number" className="form-control" id="preco" placeholder="Digite o Preço" required onChange={() => {
-            setPreco(parseNumber(document.getElementById('preco').value).toFixed(2))
+            setPreco(document.getElementById('preco').value)
           }} />
         </div>
         <div className="form-group">
@@ -71,9 +72,8 @@ function AdicionarItem() {
           <option>Ativo</option>
           <option>Inativo</option>
         </select>
-         <button onClick={() => PostarItem()}>Postar</button>
       </form>
-      
+      <button onClick={() => PostarItem()}>Postar</button>
     </>
   )
 }

@@ -19,13 +19,12 @@ function ExibirCardapio() {
     <div>
       {<button onClick={()=>setRef(ref+1)}>Atualizar</button>}
       {<Link to="/cardapio/adicionar-item">Adicionar Produtos ao Cardápio</Link>}
-      {<Outlet/>}
-      <div className="row">
+      <Outlet/><br></br>
+      
         {cardapio.map((element) => (
-            <ItemCardapio className='col' element={element} key={element.id}/>
+            <ItemCardapio element={element} key={element.id}/>
         ))}
       </div>
-    </div>
   )
 }
 export default ExibirCardapio

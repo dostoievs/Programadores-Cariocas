@@ -4,11 +4,11 @@ function ItemCardapio({element}) {
   return (
     <>
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={element.fotos} />
+        <Card.Img variant="top" src={element.fotos} width='100px' height='250px'/>
         <Card.Body>
           <Card.Title>{element.nome}</Card.Title>
           <Card.Text>
-            R${element.preco}
+            R${element.preco.toFixed(2)}
           </Card.Text>
           <input type="number" min="0" max={element.estoque}/>
           {<Button variant="primary">Comprar</Button>}
