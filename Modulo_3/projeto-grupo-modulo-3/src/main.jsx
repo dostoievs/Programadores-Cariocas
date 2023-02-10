@@ -6,13 +6,14 @@ import {
 } from "react-router-dom";
 import App from './App'
 import AdicionarItem from './components/AdicionarItem';
+import FormItem from './components/FormItem';
 import Contato from './components/Contato';
 import ExibirCardapio from './components/ExibirCardapio';
 
 const router = createBrowserRouter(
   [{
     path: "/",
-    element: <App />,
+    element: <App/>,
     errorElement: <h1> Error 404 </h1>,
     children: [{
       path: "/",
@@ -22,15 +23,15 @@ const router = createBrowserRouter(
       path: "/cardapio",
       element: <div>
         <h1> Cardápio </h1>
-        <ExibirCardapio />
+        <ExibirCardapio/>
       </div>,
-    },
-    {
-      path: "/cardapio/adicionar-item",
-      element: <div>
-        <h1>Adicionar Item</h1>
-        <AdicionarItem />
-      </div>,
+      children: [{
+        path: "/cardapio/adicionar-item",
+        element: <div>
+          <h1>Adicionar Item</h1>
+          <FormItem/>
+        </div>,
+      }],
     },
     {
       path: "/sobre",
@@ -42,7 +43,7 @@ const router = createBrowserRouter(
     },
     {
       path: "/contato",
-      element: <Contato />,
+      element: <Contato/>,
     },
     ]
   }],

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import AdicionarItem from "./AdicionarItem";
 import ItemCardapio from "./ItemCardapio";
+import { Link, Outlet } from 'react-router-dom'
 function ExibirCardapio() {
   const [cardapio, setCardapio] = useState([])
   const [ref, setRef]=useState(0)
@@ -17,7 +18,8 @@ function ExibirCardapio() {
   return (
     <div>
       {<button onClick={()=>setRef(ref+1)}>Atualizar</button>}
-      {<button onClick={()=>AdicionarItem()}>Adicionar Produtos ao Cardápio</button>}
+      {<Link to="/cardapio/adicionar-item">Adicionar Produtos ao Cardápio</Link>}
+      {<Outlet/>}
       {cardapio.map((element) => (
       <ItemCardapio element={element} key={element.id}/>
       ))}

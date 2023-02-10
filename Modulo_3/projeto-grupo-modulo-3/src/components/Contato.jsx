@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap/Button';
 function Contato() {
     return (
         <form>
@@ -29,6 +30,10 @@ function Contato() {
                     Escreva sua Mensagem
                 </div>
             </div>
+            <div className="form-group center">
+                {<Button variant="primary">Enviar</Button>}
+            </div>
+            
         </form>
     )
 }
