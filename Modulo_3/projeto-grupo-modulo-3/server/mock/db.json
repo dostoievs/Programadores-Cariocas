@@ -45,13 +45,13 @@
     "usuario": [
         {
             "id": 0,
-            "nome": "",
-            "sobrenome": "",
-            "cpf": "",
-            "email": "",
-            "senha": "",
-            "status": "",
-            "tipo": ""
+            "nome": "admin",
+            "sobrenome": "admin",
+            "cpf": "XXX.XXX.XXX-XX",
+            "email": "admin@admin.com",
+            "senha": "123456",
+            "status": "Ativo",
+            "tipo": "admin"
         }
     ]
 }
