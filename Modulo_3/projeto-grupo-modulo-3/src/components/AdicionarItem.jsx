@@ -3,23 +3,22 @@ import { useState } from "react";
 import FormItem from './FormItem'
 function AdicionarItem() {
    const [nome, setNome] = useState("");
-   const [categoria, setCategoria] = useState("Comida");
+   const [categoria, setCategoria] = useState("");
    const [preco, setPreco] = useState(0);
    const [estoque, setEstoque] = useState(0);
    const [descricao, setDescricao] = useState("");
-   const [status, setStatus] = useState("Ativo");
+   const [status, setStatus] = useState("");
    const [foto, setFoto] = useState("");
    const itens = {
       id: "",
-      categoria: "Comidas",
+      categoria: categoria,
       nome: nome,
       preco:  Number.parseFloat(preco),
       estoque: estoque,
       fotos: foto,
       descricao: descricao,
-      status: "Ativo"
+      status: status
    }
-   console.log(itens)
   function PostarItem() {
     axios
       .post('https://modulo-3-projeto-grupo.onrender.com/itens', itens)
@@ -37,11 +36,11 @@ function AdicionarItem() {
 
         </div>
         <label htmlFor='categoria'>Categoria:</label>
-        <select className="form-control" id="categoria" name="categoria">
-          <option>Comidas</option>
-          <option>Bebidas</option>
-          <option>Acompanhamentos</option>
-          <option>Sobremesa</option>
+        <select className="form-control" id="categoria" name="categoria" onChange={()=>{setCategoria(document.getElementById('categoria').options[document.getElementById('categoria').selectedIndex].value);}} required>
+          <option value='Comidas'>Comidas</option>
+          <option value='Bebidas'>Bebidas</option>
+          <option value='Acompanhamentos' onChange={()=>{setCategoria(document.getElementById('categoria').value)}}>Acompanhamentos</option>
+          <option value='Sobremesa' onChange={()=>{setCategoria(document.getElementById('categoria').value)}}>Sobremesa</option>
         </select>
         <div className="form-group">
           <label htmlFor="formGroupExampleInput2">Preço:</label>
@@ -68,9 +67,9 @@ function AdicionarItem() {
           }}></textarea>
         </div>
         <label htmlFor='status'>Status:</label>
-        <select className="form-control" id="status" name="status">
-          <option>Ativo</option>
-          <option>Inativo</option>
+        <select className="form-control" id="status" name="status" onChange={()=>{setStatus(document.getElementById('status').options[document.getElementById('status').selectedIndex].value);}} required>
+          <option value='Ativo'>Ativo</option>
+          <option value='Inativo'>Inativo</option>
         </select>
       </form>
       <button onClick={() => PostarItem()}>Postar</button>

@@ -1,8 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {Link} from 'react-router-dom';
 function ItemCardapio({element}) {
   return (
-    <>
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={element.fotos} width='100px' height='250px'/>
         <Card.Body>
@@ -11,16 +11,12 @@ function ItemCardapio({element}) {
             R${element.preco.toFixed(2)}
           </Card.Text>
           <input type="number" min="0" max={element.estoque}/>
-          {<Button variant="primary">Comprar</Button>}
+          <div>
+            <Button variant="primary">Comprar</Button>
+            <Link to='/cardapio/editar-item/:id' id={element.id}>Editar</Link>
+          </div>
         </Card.Body>
       </Card>
-
-      {/*<div style={{align:'left', display:'flex', margin:20, alignItems:'center'}}>
-      <label htmlFor={tituloTarefa}>{idTarefa} :</label>
-      <input type="checkbox" id={tituloTarefa} />
-      <span style={{marginLeft:20}}> {tituloTarefa}</span>
-  </div>*/}
-    </>
   )
 }
 export default ItemCardapio
