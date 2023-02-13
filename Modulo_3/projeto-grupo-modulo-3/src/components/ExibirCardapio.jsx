@@ -10,7 +10,6 @@ function ExibirCardapio() {
     axios
       .get('https://modulo-3-projeto-grupo.onrender.com/itens')
       .then((response) => {
-        console.log(response.data[0].nome)
         setCardapio(response.data)
       })
       .catch((error) => { console.error(error) })
@@ -22,7 +21,7 @@ function ExibirCardapio() {
       <Outlet/><br></br>
       
         {cardapio.map((element) => (
-            element.status==="Ativo"?<ItemCardapio element={element} key={element.id}/>:console.log(element.status)
+            element.status==="Ativo"?<ItemCardapio element={element} key={element.id}/>:''
         ))}
       </div>
   )

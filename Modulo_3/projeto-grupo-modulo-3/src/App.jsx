@@ -3,14 +3,9 @@ import LogoJS from './assets/javascript.svg'
 import logoHan from './assets/logo.jpg'
 /*import './App.css'*/
 import 'bootstrap/dist/css/bootstrap.min.css'
-{/*import Form from './components/Form'
-import NovaTarefa from './components/NovaTarefa'*/}
-import ExibirCardapio from './components/ExibirCardapio'
 import { Outlet } from 'react-router-dom'
 import NavBar from './components/NavBar'
-{/*import BotaoUseEffect from './components/BotaoUseEffect'
-import DeleteAxios from './components/DeleteAxios'
-import PutAxios from './components/PutAxios'*/}
+import Footer from './components/Footer'
 function App() {
   return (
     <div className="App">
@@ -21,15 +16,7 @@ function App() {
       <div className='d-flex justify-content-center'>
         <Outlet/>
         </div>
-      {/* 
-      <GetAxios />
-      <Form />
-      <br />
-      <NovaTarefa />
-      <DeleteAxios/>
-      <PutAxios/> */}
-
-      {/* <BotaoUseEffect/> */}
+      <Footer/>
     </div>
   )
 }

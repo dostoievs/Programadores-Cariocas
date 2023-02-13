@@ -12,8 +12,9 @@ function ItemCardapio({element}) {
           </Card.Text>
           <input type="number" min="0" max={element.estoque}/>
           <div>
-            <Button variant="primary">Comprar</Button>
-            <Link to='/cardapio/editar-item/:id' id={element.id}>Editar</Link>
+            <Link to='/pedido'>Adicionar ao Carrinho</Link>
+            <Link to={`/cardapio/editar-item/${element.id}`}>Editar</Link>
+            <Link to={`/cardapio/deletar-item/${element.id}`}>Deletar</Link>
           </div>
         </Card.Body>
       </Card>

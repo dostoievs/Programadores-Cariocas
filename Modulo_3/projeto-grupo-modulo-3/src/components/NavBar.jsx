@@ -5,6 +5,8 @@ import logo from '../assets/react.svg'
 import {Link} from 'react-router-dom';
 import Style from './NavBar.module.css'
 import logoHan from '../assets/logo.jpg'
+import Badge from 'react-bootstrap/Badge';
+import './NavBar.module.css'
 
 function NavBar() {
   return (
@@ -19,7 +21,7 @@ function NavBar() {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            Projeto React
+            Han?Burgueria
           </Navbar.Brand>
 
           <Navbar bg="dark" variant="dark">
@@ -27,13 +29,14 @@ function NavBar() {
           <Nav className="me-auto row">
             <Nav className='col'><Link to='/cardapio' className={Style.links}>Cardápio</Link></Nav>
             <Nav className='col'><Link to='/sobre' className={Style.links}>Sobre</Link></Nav>
-            <Nav className='col'><Link to='/pedidos' className={Style.links}>Pedidos</Link></Nav>
             <Nav className='col'><Link to='/contato' className={Style.links}>Contato</Link></Nav>
+            <Nav className='col'><Link to='/pedidos' className={Style.links}><Badge bg="secondary">0</Badge></Link></Nav>
           </Nav>
         </Container>
       </Navbar>
         </Container>
       </Navbar>
+      
     </>
   );
 }
