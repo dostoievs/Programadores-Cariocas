@@ -16,7 +16,7 @@ import DeletarItemCardapio from './components/DeletarItemCardapio';
 import Pedido from './components/Pedido';
 
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [{
     path: "/",
     element: <App/>,
