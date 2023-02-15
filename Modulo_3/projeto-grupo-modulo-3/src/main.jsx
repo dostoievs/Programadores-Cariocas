@@ -18,11 +18,11 @@ import Pedido from './components/Pedido';
 
 const router = createHashRouter(
   [{
-    path: "/#",
+    path: "/",
     element: <App/>,
     errorElement: <h1> Error 404 </h1>,
     children: [{
-      path: "/#",
+      path: "/",
       element: <h1> Home </h1>,
     },
     {
