@@ -1,13 +1,12 @@
 import axios from "axios";
 import { useState } from "react";
-import FormItem from './FormItem'
 function AdicionarItem() {
    const [nome, setNome] = useState("");
-   const [categoria, setCategoria] = useState("Comidas");
+   const [categoria, setCategoria] = useState("");
    const [preco, setPreco] = useState(0);
    const [estoque, setEstoque] = useState(0);
    const [descricao, setDescricao] = useState("");
-   const [status, setStatus] = useState("Ativo");
+   const [status, setStatus] = useState("");
    const [foto, setFoto] = useState("");
    const itens = {
       id: "",
@@ -17,7 +16,7 @@ function AdicionarItem() {
       estoque: estoque,
       fotos: foto,
       descricao: descricao,
-      status: status
+      status: status,
    }
   function PostarItem() {
     axios
@@ -25,7 +24,7 @@ function AdicionarItem() {
       .then((response) => { console.log(response) })
       .catch((error) => { console.log(error) })
   }
-  console.log(itens.status)
+  console.log(itens)
   return (
     <>
       <form>
@@ -37,12 +36,13 @@ function AdicionarItem() {
 
         </div>
         <label htmlFor='categoria'>Categoria:</label>
-        <select className="form-control" id="categoria" name="categoria" defaultValue={''} onChange={()=>{setCategoria(document.getElementById('categoria').options[document.getElementById('categoria').selectedIndex].value);}} required>
+        <select className="form-control" id="categoria" name="categoria" onChange={
+          ()=>{setCategoria(document.getElementById('categoria').options[document.getElementById('categoria').selectedIndex].value);}} required>
           <option value="" disabled>Selecione uma Categoria ...</option>
-          <option value='Comidas'>Comidas</option>
+          <option value='Comida'>Comidas</option>
           <option value='Bebidas'>Bebidas</option>
-          <option value='Acompanhamentos' onChange={()=>{setCategoria(document.getElementById('categoria').value)}}>Acompanhamentos</option>
-          <option value='Sobremesa' onChange={()=>{setCategoria(document.getElementById('categoria').value)}}>Sobremesa</option>
+          <option value='Acompanhamentos' >Acompanhamentos</option>
+          <option value='Sobremesa' >Sobremesa</option>
         </select>
         <div className="form-group">
           <label htmlFor="formGroupExampleInput2">Preço:</label>
@@ -64,24 +64,25 @@ function AdicionarItem() {
         </div>
         <div className="mb-3">
           <label htmlFor="validationTextarea">Descrição:</label>
-          <textarea className="form-control" id="descricao" placeholder="Digite a descrição do produto" required onChange={() => {
+          <textarea className="form-control" id="descricao" placeholder="Digite a descrição do produto" value={descricao} required onChange={() => {
             setDescricao(document.getElementById('descricao').value)
           }}></textarea>
         </div>
         <label htmlFor='status'>Status:</label>
-        <select className="form-control" id="status" name="status" defaultValue={''} onChange={()=>{setStatus(document.getElementById('status').options[document.getElementById('status').selectedIndex].value);}} required>
+        <select className="form-control" id="status" name="status" onChange={()=>{
+          setStatus(document.getElementById('status').options[document.getElementById('status').selectedIndex].value)}} required>
           <option value="" disabled>Selecione um Status ...</option>
           <option value='Ativo'>Ativo</option>
           <option value='Inativo'>Inativo</option>
         </select>
-        <button type='submit'onClick={() => ((itens.status!='')&&
+        <button type='button' onClick={() => ((itens.status!='')&&
                                              (itens.nome!='')&&
                                              (itens.categoria!='')&&
                                              (itens.foto!='')&&
                                              (itens.estoque!='')&&
                                              (itens.preco!='')&&
                                              (itens.descricao!=''))?
-                                             PostarItem():''}>Postar</button>
+                                             PostarItem():console.log('Erro')}>Postar</button>
       </form>
     </>
   )
