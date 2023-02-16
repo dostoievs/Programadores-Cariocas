@@ -31,41 +31,39 @@ const router = createHashRouter(
         <h1> Cardápio </h1>
         <ExibirCardapio/>
       </div>,
-      children: [
-        {
-          path: "/cardapio/adicionar-item",
-          element: <div>
-            <h1>Adicionar Item</h1>
-            <AdicionarItem/>
-          </div>,
-        },
-        {
-          path: "/cardapio/editar-item/:id",
-          element: <div>
-            <h1>Editar Item </h1>
-              <EditarItemCardapio/>
-          </div>,
-        },
-        {
-          path: "/cardapio/deletar-item/:id",
-          element: <div>
-              <DeletarItemCardapio/>
-          </div>,
-        },
-      ],
     },
     {
-      path: "/sobre",
-      element: <Sobre />,
-    },
-    {
-      path: "/pedido",
-      element: <Pedido/>,
-    },
-    {
-      path: "/contato",
-      element: <Contato />,
-    },
+      path: "/cardapio/adicionar-item",
+      element: <div>
+        <h1>Adicionar Item</h1>
+        <AdicionarItem/>
+        </div>,
+     },
+     {
+       path: "/cardapio/editar-item/:id",
+       element: <div>
+       <h1>Editar Item </h1>
+       <EditarItemCardapio/>
+       </div>,
+     },
+     {
+       path: "/cardapio/deletar-item/:id",
+       element: <div>
+       <DeletarItemCardapio/>
+       </div>,
+     },
+     {
+       path: "/sobre",
+       element: <Sobre />,
+     },
+     {
+       path: "/pedido/:id",
+       element: <Pedido/>,
+     },
+     {
+       path: "/contato",
+       element: <Contato />,
+     },
     ]
   }],
 );
