@@ -1,0 +1,55 @@
+.tabela{
+  margin-top: -120px;
+  width: 600px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.centroCarrinho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.botao{
+  border: none;
+  color: red;
+  background-color: transparent;
+}
+
+input{
+  width: 45px;
+  text-align: center;
+}
+
+.botao-clique{
+  color:#fff;
+}
+
+.botao-clique:hover{
+  color: black;
+}
+
+.text-darkCarrinho {
+  border: none;
+}
+
+.modalTabela{
+  text-align: center;
+}
+
+.aliengif{
+  height: 60px;
+  width: 100px;
+}
+
+
+th{
+  width: 200px;
+}
+
+td{
+  width: 200px;
+}

@@ -1,0 +1,44 @@
+.tabelaF{
+  width: 350px;
+  text-align: center
+  
+  
+}
+
+.titulos{
+  color: #fff;
+}
+
+
+.colunas{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.titulo{
+  text-align: center;
+  color: #fff;
+}
+
+.fundo-pedido{
+  background-image: url(../../assets/Foto2.png);
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 60px 0 60px 0;
+}
+
+
+.buton{
+  color:#fff;
+}
+.buton:hover{
+color: black;
+}
+
+
+
+
+
+ 

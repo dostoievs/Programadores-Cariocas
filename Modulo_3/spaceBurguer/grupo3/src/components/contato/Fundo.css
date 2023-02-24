@@ -1,0 +1,10 @@
+.text {
+    margin-top: 250px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+
+.text-dark {
+    border: none;
+    margin-bottom: -25px;
+}
