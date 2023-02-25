@@ -28,7 +28,7 @@ function Tabela({ id }) {
 
   async function loadId() {
     try {
-      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/pedido/${id}`, {
+      const resp = await fetch(`https://server-space-burguer.onrender.com/pedido/${id}`, {
         method: 'GET',
       });
       //console.log('resposta fetch carrinho->', resp)
@@ -64,7 +64,7 @@ function Tabela({ id }) {
     console.log(dados)
 
     try {
-      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/comanda`, {
+      const resp = await fetch(`https://server-space-burguer.onrender.com/comanda`, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
