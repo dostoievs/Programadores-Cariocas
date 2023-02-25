@@ -14,7 +14,7 @@
                     "nome": "X-Burguer",
                     "ingredientes": "Pão, carne, queijo e picles",
                     "preco": 12,
-                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Xburguer.png"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Xburguer.png?raw=true"
                 },
                 {
                     "id": 3,
