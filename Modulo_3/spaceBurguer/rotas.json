@@ -7,21 +7,21 @@
                     "nome": "X-Bacon",
                     "ingredientes": "Pão, carne, queijo e bacon",
                     "preco": 15,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Xbacon.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Xbacon.png?raw=true"
                 },
                 {
                     "id": 2,
                     "nome": "X-Burguer",
                     "ingredientes": "Pão, carne, queijo e picles",
                     "preco": 12,
-                    "img": "https://raw.githubusercontent.com/DevairUva/Individual3/main/grupo3/src/assets/Xburguer.png"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Xburguer.png"
                 },
                 {
                     "id": 3,
                     "nome": "Vegetariano",
                     "ingredientes": "Pão e uma incrível salada",
                     "preco": 11,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Vegetariano.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Vegetariano.png?raw=true"
                 }        
             ]
         },
@@ -32,21 +32,21 @@
                     "nome": "Coca Cola",
                     "ingredientes": "Refrigerante de cola",
                     "preco": 11,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Coca.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Coca.png?raw=true"
                 },
                 {
                     "id": 2,
                     "nome": "Guaraná Antarctica",
                     "ingredientes": "Refrigerante de guaraná",
                     "preco": 10,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Guarana.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Guarana.png?raw=true"
                 },
                 {
                     "id": 3,
                     "nome": "Pepsi",
                     "ingredientes": "Refrigerante de cola",
                     "preco": 10,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Pepsi.png?raw=true"                }        
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Pepsi.png?raw=true"                }        
             ]
         },
         {
@@ -56,21 +56,21 @@
                     "nome": "Sorvete",
                     "sabor": "3 bolas (sabores)",
                     "preco": 9,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Napolitano.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Napolitano.png?raw=true"
                 },
                 {
                     "id": 2,
                     "nome": "Açai",
                     "sabor": "Natural ou morango",
                     "preco": 10,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Acaii.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Acaii.png?raw=true"
                 },
                 {
                     "id": 3,
                     "nome": "Salada de frutas",
                     "sabor": "Frutas da estação",
                     "preco": 7,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Salada.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Salada.png?raw=true"
                 }        
             ]
         },
@@ -81,21 +81,21 @@
                     "nome": "Batata frita",
                     "ingredientes": "Batata frita palito",
                     "preco": 9,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Batata.png?raw=true" 
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Batata.png?raw=true" 
                 },
                 {
                     "id": 2,
                     "nome": "Anel de cebola",
                     "ingredientes": "Porção com 10 unidades",
                     "preco": 10,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Cebola.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Cebola.png?raw=true"
                     },
                 {
                     "id": 3,
                     "nome": "Tekitos",
                     "ingredientes": "Porção com 10 unidades",
                     "preco": 7,
-                    "img": "https://github.com/DevairUva/Individual3/blob/main/grupo3/src/assets/Tekitos.png?raw=true"
+                    "img": "https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_3/spaceBurguer/grupo3/src/assets/Tekitos.png?raw=true"
                 }        
             ]
         }
