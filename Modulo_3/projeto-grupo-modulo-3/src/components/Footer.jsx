@@ -16,8 +16,8 @@ function Footer() {
   
           <div>
             <strong>Fale Conosco:</strong><br />
-            <i className="fa fa-twitter"> Space.Burger</i><br />
-            <i className="fa fa-instagram textColor"> Space.Burguer</i>
+            <i className="fa fa-twitter"> Han?Hum</i><br />
+            <i className="fa fa-instagram textColor"> Han?Hum</i>
           </div>
         </footer>
     )
