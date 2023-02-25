@@ -15,7 +15,7 @@ function Cardapio() {
   }, [])
   async function loadCardapio() {
     try {
-      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/cardapio`, {
+      const resp = await fetch(`https://server-space-burguer.onrender.com/cardapio`, {
         method: 'GET',
       });
       console.log('resposta fetch->', resp)
