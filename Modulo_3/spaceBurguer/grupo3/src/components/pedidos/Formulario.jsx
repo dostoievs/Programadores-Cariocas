@@ -57,7 +57,7 @@ function Formulario() {
 
   async function loadCardapio() {
     try {
-      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/cardapio`, {
+      const resp = await fetch(`https://server-space-burguer.onrender.com/cardapio`, {
         method: 'GET',
       });
       //console.log('resposta fetch->', resp)
@@ -80,7 +80,7 @@ function Formulario() {
 
   async function loadId() {
     try {
-      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/pedido`, {
+      const resp = await fetch(`https://server-space-burguer.onrender.com/pedido`, {
         method: 'GET',
       });
       //console.log('resposta fetch ID->', resp)
@@ -127,7 +127,7 @@ function Formulario() {
     }
     console.log('dados id novo', dados)
     try {
-      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/pedido`, {
+      const resp = await fetch(`https://server-space-burguer.onrender.com/pedido`, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
