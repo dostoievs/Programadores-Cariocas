@@ -78,7 +78,7 @@ function Tabela({ id }) {
         setShow(false)
         setShow2(true)
         setTimeout(function () {
-          window.location.href = "https://spaceburguersquad1.onrender.com/#/comanda";
+          window.location.href = "https://server-space-burguer.onrender.com/#/comanda";
         }, 4000);
       }
     } catch (e) {
