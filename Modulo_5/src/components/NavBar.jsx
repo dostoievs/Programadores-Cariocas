@@ -11,7 +11,7 @@ import './NavBar.module.css'
 function NavBar() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar style={{backgroundColor: "blue"}} variant="dark">
         <Container>
           <Navbar.Brand href="/">
             <img
@@ -24,13 +24,14 @@ function NavBar() {
             Han?Burgueria
           </Navbar.Brand>
 
-          <Navbar bg="dark" variant="dark">
+          <Navbar style={{backgroundColor: "blue"}} variant="dark">
         <Container>
           <Nav className="me-auto row">
-            <Nav className='col'><Link to='/cardapio' className={Style.links}>Cardápio</Link></Nav>
-            <Nav className='col'><Link to='/sobre' className={Style.links}>Sobre</Link></Nav>
-            <Nav className='col'><Link to='/contato' className={Style.links}>Contato</Link></Nav>
-            <Nav className='col'><Link to='/pedidos' className={Style.links}><Badge bg="secondary">0</Badge></Link></Nav>
+            <Nav className='col'><Link to='/cardapio' className={Style.links}><strong>Cardápio</strong></Link></Nav>
+            <Nav className='col'><Link to='/sobre' className={Style.links}><strong>Sobre</strong></Link></Nav>
+            <Nav className='col'><Link to='/contato' className={Style.links}><strong>Contato</strong></Link></Nav>
+            <Nav className='col'><Link to='/autores' className={Style.links}><strong>Autores</strong></Link></Nav>
+            <Nav className='col'><Link to='/pedidos' className={Style.links}><img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/shopping-cart.png?raw=true'/><Badge bg="light" style={{color:'black'}}>0</Badge></Link></Nav>
           </Nav>
         </Container>
       </Navbar>

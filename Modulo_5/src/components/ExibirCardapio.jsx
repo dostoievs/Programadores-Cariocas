@@ -21,7 +21,7 @@ function ExibirCardapio() {
       <Outlet/><br></br>
       
         {cardapio.map((element) => (
-            element.status==="Ativo"?<ItemCardapio element={element} key={element.id}/>:''
+            element.status=="Ativo"?<ItemCardapio element={element} key={element.id}/>:''
         ))}
       </div>
   )
