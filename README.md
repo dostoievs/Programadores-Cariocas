@@ -1,5 +1,8 @@
 # Projeto Em Grupo - Módulo-5
 
+# Objetivo do Projeto 
+
+## :computer: Tecnologias Utilizadas
 
 ## :handshake: Autores 
 
