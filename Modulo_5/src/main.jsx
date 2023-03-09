@@ -64,6 +64,10 @@ const router = createHashRouter(
        path: "/contato",
        element: <Contato />,
      },
+   {
+       path: "/autores",
+       element: <Autores />,
+     },
     ]
   }],
 );
