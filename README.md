@@ -1,5 +1,13 @@
 # Projeto Final - Módulo-5
 
+Nesse projeto você e sua squad serão responsáveis por
+definir quais são as entidades que o projeto precisa
+contemplar e cada um de vocês será responsável por
+implementar uma dessas entidades.
+⇒ Entrega: deve ser feita em um único repositório (ou seja, o
+grupo vai trabalhar no mesmo repositório criando todas as
+rotas para as entidades mapeadas).
+
 # Objetivo do Projeto 
 
 ## :computer: Tecnologias Utilizadas
