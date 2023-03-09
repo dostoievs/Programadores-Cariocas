@@ -66,7 +66,7 @@ const router = createHashRouter(
      },
    {
        path: "/autores",
-       element: <Autores />,
+       /*element: <Autores />,*/
      },
     ]
   }],
