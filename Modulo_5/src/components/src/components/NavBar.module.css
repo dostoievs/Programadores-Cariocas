@@ -1,0 +1,19 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color:aliceblue;
+    margin: right 30rem;
+}
+.links:hover{
+    color:aliceblue;
+
+}
+img{
+    background-color: aliceblue;
+}
