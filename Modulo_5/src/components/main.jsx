@@ -4,19 +4,21 @@ import {
   createHashRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from './App'
-import AdicionarItem from './components/AdicionarItem';
-import FormItem from './components/FormItem';
-import Contato from './components/Contato';
-import ExibirCardapio from './components/ExibirCardapio';
-import Sobre from './components/Sobre';
-import ExibirPedidos from './components/ExibirPedidos';
-import EditarItemCardapio from './components/EditarItemCardapio'
-import DeletarItemCardapio from './components/DeletarItemCardapio';
-import Pedido from './components/Pedido';
-import Autores from './components/Autores';
-import Login from './components/Login'
-import CadastroUsuario from './components/CadastroUsuário';
+import App from './src/App'
+import AdicionarItem from './src/components/AdicionarItem';
+import FormItem from './src/components/FormItem';
+import Contato from './src/components/Contato';
+import ExibirCardapio from './src/components/ExibirCardapio';
+import Sobre from './src/components/Sobre';
+import ExibirPedidos from './src/components/ExibirPedidos';
+import EditarItemCardapio from './src/components/EditarItemCardapio'
+import DeletarItemCardapio from './src/components/DeletarItemCardapio';
+import Pedido from './src/components/Pedido';
+import Autores from './src/components/Autores';
+import Login from './src/components/Login';
+
+
+
 
 const router = createHashRouter(
   [{
@@ -74,15 +76,12 @@ const router = createHashRouter(
       path: "/login",
       element: <Login/>,
     },
-    {
-      path: "/cadastro",
-      element: <CadastroUsuario/>,
-    },
     ]
   }],
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,

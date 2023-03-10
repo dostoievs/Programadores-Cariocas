@@ -32,6 +32,7 @@ function NavBar() {
             <Nav className='col'><Link to='/contato' className={Style.links}><strong>Contato</strong></Link></Nav>
             <Nav className='col'><Link to='/autores' className={Style.links}><strong>Autores</strong></Link></Nav>
             <Nav className='col'><Link to='/pedidos' className={Style.links}><img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/shopping-cart.png?raw=true'/><Badge bg="light" style={{color:'black'}}>0</Badge></Link></Nav>
+            <Nav className='col'><Link to='/login' className={Style.links}><strong>Login</strong></Link></Nav>
           </Nav>
         </Container>
       </Navbar>
