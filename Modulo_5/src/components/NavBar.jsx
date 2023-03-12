@@ -21,7 +21,7 @@ function NavBar() {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            Han?Burgueria
+            <strong>Han?Burgueria</strong>
           </Navbar.Brand>
 
           <Navbar style={{backgroundColor: "blue"}} variant="dark">
@@ -32,11 +32,14 @@ function NavBar() {
             <Nav className='col'><Link to='/contato' className={Style.links}><strong>Contato</strong></Link></Nav>
             <Nav className='col'><Link to='/autores' className={Style.links}><strong>Autores</strong></Link></Nav>
             <Nav className='col'><Link to='/pedidos' className={Style.links}><img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/shopping-cart.png?raw=true'/><Badge bg="light" style={{color:'black'}}>0</Badge></Link></Nav>
-            <Nav className='col'><Link to='/login' className={Style.links}><strong>Login</strong></Link></Nav>
-          </Nav>
+          </Nav>     
         </Container>
       </Navbar>
         </Container>
+        <Nav className="d-flex flex-row bd-highlight mb-3">
+            <Nav className='p-2 bd-highlight'><Link to='/login' className={Style.links}><strong>Login</strong></Link></Nav>
+            <Nav className='p-2 bd-highlight'><Link to='/cadastro' className={Style.links}><strong>Cadastre-se</strong></Link></Nav>
+          </Nav>   
       </Navbar>
       
     </>
