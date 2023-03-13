@@ -16,7 +16,7 @@ import DeletarItemCardapio from './components/DeletarItemCardapio';
 import Pedido from './components/Pedido';
 import Autores from './components/Autores';
 import Login from './components/Login'
-import CadastroUsuario from './components/CadastroUsuário';
+import CadastroUsuario from './components/CadastroUsuario';
 
 const router = createHashRouter(
   [{
@@ -59,7 +59,7 @@ const router = createHashRouter(
        element: <Sobre />,
      },
      {
-       path: "/pedido/:id",
+       path: "/pedido/",
        element: <Pedido/>,
      },
      {

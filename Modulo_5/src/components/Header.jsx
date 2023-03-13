@@ -33,7 +33,7 @@ const Header = () => {
   };
 
   return (
-    <>
+    <div>
       <div id="header">
           {/* collapsed props to change menu size using menucollapse state */}
         <ProSidebar collapsed={menuCollapse}>
@@ -69,7 +69,7 @@ const Header = () => {
           </SidebarFooter>
         </ProSidebar>
       </div>
-    </>
+    </div>
   );
 };
 

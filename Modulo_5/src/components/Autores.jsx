@@ -6,6 +6,8 @@ import Antonio from '../assets/AntônioAugustoMartinsDeOliveira.jpg'
 import David from '../assets/DavidLopesGomes.png'
 import Igor from '../assets/IgorDeSousaMorais.jpg'
 import Luan from '../assets/Luan.jpg'
+import {FaGithubSquare} from "react-icons/fa";
+
 
 function Autores() {
     return (
@@ -22,7 +24,7 @@ function Autores() {
                             </svg>
                         </Link>
                         <Link to='https://github.com/dostoievs' className="btn btn-light">
-                            <img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/github-logo.png?raw=true'></img>
+                            <FaGithubSquare/>
                         </Link>
                     </div>
                 </Card.Body>
@@ -40,7 +42,7 @@ function Autores() {
                             </svg>
                         </Link>
                         <Link to='https://github.com/AugustOliveir' className="btn btn-light">
-                            <img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/github-logo.png?raw=true'></img>
+                            <FaGithubSquare/>
                         </Link>
                     </div>
                 </Card.Body>
@@ -59,7 +61,7 @@ function Autores() {
                             </svg>
                         </Link>
                         <Link to='https://github.com/davidlgomes' className="btn btn-light">
-                            <img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/github-logo.png?raw=true'></img>
+                            <FaGithubSquare/>
                         </Link>
                     </div>
                 </Card.Body>
@@ -78,7 +80,7 @@ function Autores() {
                             </svg>
                         </Link>
                         <Link to='https://github.com/igorzpqd' className="btn btn-light">
-                            <img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/github-logo.png?raw=true'></img>
+                            <FaGithubSquare/>
                         </Link>
                     </div>
                 </Card.Body>
@@ -97,7 +99,7 @@ function Autores() {
                             </svg>
                         </Link>
                         <Link to='https://github.com/luansilva92' className="btn btn-light">
-                            <img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/github-logo.png?raw=true'></img>
+                            <FaGithubSquare/>
                         </Link>
                     </div>
                 </Card.Body>

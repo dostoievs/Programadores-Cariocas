@@ -16,13 +16,59 @@ function ExibirCardapio() {
   }, [ref])
   return (
     <div>
-      {<button onClick={()=>setRef(ref+1)}>Atualizar</button>}
+      {/*<button onClick={()=>setRef(ref+1)}>Atualizar</button>*/}
       {<Link to="/cardapio/adicionar-item">Adicionar Produtos ao Cardápio</Link>}
       <Outlet/><br></br>
-      
-        {cardapio.map((element) => (
-            element.status=="Ativo"?<ItemCardapio element={element} key={element.id}/>:''
-        ))}
+      <h2 className='comidas'>Comidas</h2>
+      <section className="section site-portfolio">
+        <div className="container">
+          <div id="portfolio-grid" className="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+            {cardapio.map((element) => (
+                  element.status=="Ativo" && element.categoria=='Comida'?
+                    <ItemCardapio element={element} key={element.id}/>
+                  :''
+              ))}
+          </div>
+        </div>
+      </section>
+        
+      <h2 className="bebidas">Bebidas</h2>
+      <section className="section site-portfolio">
+                <div className="container">
+                  <div id="portfolio-grid" className="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+                    {cardapio.map((element) => (
+                            element.status=="Ativo" && element.categoria=='Bebidas'?
+                              <ItemCardapio element={element} key={element.id} style={{flex:1, flexDirection:'row'}}/>
+                            :''
+                        ))}
+                    </div>
+                </div>
+      </section>
+
+      <h2 className="sobremesas">Sobremesas</h2>
+        <section className="section site-portfolio">
+                <div className="container">
+                  <div id="portfolio-grid" className="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+                      {cardapio.map((element) => (
+                          element.status=="Ativo" && element.categoria=='Sobremesa'?
+                            <ItemCardapio element={element} key={element.id} style={{flex:1, flexDirection:'row'}}/>
+                          :''
+                      ))}
+                  </div>
+                </div>
+      </section>
+      <h2 className="acompanhamentos">Acompanhamentos</h2>
+      <section className="section site-portfolio">
+                <div className="container">
+                  <div id="portfolio-grid" className="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+                      {cardapio.map((element) => (
+                          element.status=="Ativo" && element.categoria=='Acompanhamentos'?
+                            <ItemCardapio element={element} key={element.id} style={{flex:1, flexDirection:'row'}}/>
+                          :''
+                      ))}
+                  </div>
+                </div>
+      </section>
       </div>
   )
 }

@@ -7,6 +7,8 @@ import Style from './NavBar.module.css'
 import logoHan from '../assets/logo.jpg'
 import Badge from 'react-bootstrap/Badge';
 import './NavBar.module.css'
+import { FiShoppingCart } from "react-icons/fi"
+
 
 function NavBar() {
   return (
@@ -31,7 +33,7 @@ function NavBar() {
             <Nav className='col'><Link to='/sobre' className={Style.links}><strong>Sobre</strong></Link></Nav>
             <Nav className='col'><Link to='/contato' className={Style.links}><strong>Contato</strong></Link></Nav>
             <Nav className='col'><Link to='/autores' className={Style.links}><strong>Autores</strong></Link></Nav>
-            <Nav className='col'><Link to='/pedidos' className={Style.links}><img src='https://github.com/davidlgomes/Programadores-Cariocas/blob/main/Modulo_5/src/assets/shopping-cart.png?raw=true'/><Badge bg="light" style={{color:'black'}}>0</Badge></Link></Nav>
+            <Nav className='col'><Link to='/pedidos' className={Style.links}><strong><FiShoppingCart/><Badge bg="light" style={{color:'black'}}>0</Badge></strong></Link></Nav>
           </Nav>     
         </Container>
       </Navbar>

@@ -1,7 +1,7 @@
-function Pedido({itens}){
+import Globais from "./Globais"
+function Pedido(){
     let pedidos=[]
-    pedidos.push({itens})
-    console.log({itens})
+    console.log(Globais.itens)
     return (
         <>
         </>

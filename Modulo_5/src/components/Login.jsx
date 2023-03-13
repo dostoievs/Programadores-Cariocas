@@ -11,6 +11,15 @@ function Login(){
                 <input type="password" className="form-control" id="senha" placeholder="Senha" required onChange={() => {
                 setNome(document.getElementById('nome').value)}}/>
             </div>
+            <button type='button' onClick={() => ((itens.nomeCompleto!='')&&
+                                             (itens.cpf!='')&&
+                                             (itens.email!='')&&
+                                             (itens.tipoUsuario!='')&&
+                                             (itens.senha!='')&&
+                                             (itens.password!='')&&
+                                             (itens.statusUsuario!='')&&
+                                             (itens.senha===itens.confirmacaoSenha))?
+                                             PostarItem():console.log('Erro')}>Fazer Login</button>
         </form>
     )
 }
