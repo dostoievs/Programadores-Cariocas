@@ -8,6 +8,7 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { useRef } from 'react';
+
 function App() {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
   return (
